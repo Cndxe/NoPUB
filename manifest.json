@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "NoPUB",
+  "version": "1.0.0",
+  "description": "Bloque les publicités sur les sites web.",
+  "permissions": [
+    "declarativeNetRequest",
+    "storage",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "NoPUB",
+    "default_popup": "popup/popup.html"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ads",
+        "enabled": true,
+        "path": "rules/ads.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/cleaner.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

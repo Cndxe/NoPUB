@@ -1,0 +1,63 @@
+
+Popup · HTML
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NoPub</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+ 
+    <div class="header">
+      <div class="badge">
+        <div class="badge-glow"></div>
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="shieldGrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#ec1a8d" />
+              <stop offset="52%" stop-color="#7b2ff7" />
+              <stop offset="100%" stop-color="#2f7de1" />
+            </linearGradient>
+          </defs>
+          <path d="M50 6 L88 20 C88 46 82 72 50 94 C18 72 12 46 12 20 Z"
+                fill="url(#shieldGrad)" />
+          <path d="M50 16 L79 26.5 C79 47 74.5 68 50 85.5 C25.5 68 21 47 21 26.5 Z"
+                fill="none" stroke="white" stroke-width="3.4" stroke-linejoin="round" />
+          <line x1="30" y1="70" x2="72" y2="28" stroke="white" stroke-width="4.2" stroke-linecap="round" />
+        </svg>
+      </div>
+ 
+      <p class="eyebrow">Bloqueur de publicités</p>
+      <h1>NoPub</h1>
+ 
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <p id="status">Protection active</p>
+      </div>
+    </div>
+ 
+    <div class="counter">
+      <div class="counter-inner">
+        <span>Publicités bloquées</span>
+        <strong id="counter">0</strong>
+      </div>
+    </div>
+ 
+    <div class="toggle-row">
+      <div class="toggle-label">
+        <span class="toggle-title">Protection</span>
+        <span class="toggle-sub" id="toggleSub">Activée sur ce site</span>
+      </div>
+      <button id="toggle" class="switch on" aria-pressed="true" aria-label="Activer ou désactiver la protection">
+        <span class="switch-thumb"></span>
+      </button>
+    </div>
+ 
+  </div>
+ 
+  <script src="popup.js"></script>
+</body>
+</html>
