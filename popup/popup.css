@@ -21,33 +21,32 @@
 html {
   margin: 0;
   padding: 0;
-  background: transparent;
+  background: var(--bg-1);
 }
 
 body {
   margin: 0;
-  padding: 12px;
+  padding: 0;
   width: 300px;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
     "Inter", "Segoe UI", Roboto, sans-serif;
-  background: var(--bg-0);
+  background: var(--bg-1);
   color: var(--text-0);
   -webkit-font-smoothing: antialiased;
+  border-radius: 24px;
+    overflow: hidden;
+    /* Découpe proprement les coins du popup */
 }
 
 .panel {
   position: relative;
-  border-radius: 24px;
-  overflow: hidden;
   background:
     radial-gradient(120% 90% at 12% -10%, rgba(236, 26, 141, 0.22), transparent 55%),
     radial-gradient(120% 90% at 100% 0%, rgba(47, 125, 225, 0.22), transparent 55%),
     radial-gradient(140% 100% at 50% 120%, rgba(123, 47, 247, 0.18), transparent 60%),
     var(--bg-1);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow:
-    0 12px 32px rgba(0, 0, 0, 0.45),
-    0 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 24px;
 }
 
 .container {
