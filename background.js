@@ -15,22 +15,39 @@ chrome.runtime.onStartup.addListener(() => {
             });
         }
 
-        showStartupNotification();
+        showStartupPopup();
     });
 });
 
 
-function showStartupNotification() {
+function showStartupPopup() {
 
-    chrome.notifications.create(
-        "nopub-started",
-        {
-            type: "basic",
-            iconUrl: "icon.png",
-            title: "NoPUB",
-            message: "NoPUB activé",
-            priority: 1
+    // Ouvre le popup de l'extension (popup/popup.html) directement
+    // depuis la barre d'outils de Chrome, au lieu d'une notification système.
+    // Nécessite Chrome 127+ ; on encapsule dans un try/catch car l'appel
+    // peut échouer si aucune fenêtre Chrome n'est au premier plan.
+    try {
+
+        const result = chrome.action.openPopup();
+
+        if (result && typeof result.catch === "function") {
+
+            result.catch((error) => {
+                console.warn(
+                    "NoPUB : impossible d'ouvrir le popup au démarrage :",
+                    error
+                );
+            });
+
         }
-    );
+
+    } catch (error) {
+
+        console.warn(
+            "NoPUB : impossible d'ouvrir le popup au démarrage :",
+            error
+        );
+
+    }
 
 }
