@@ -38,3 +38,6 @@ Un script analyse les pages et supprime certains éléments identifiés comme pu
 
 Un `MutationObserver` permet également de surveiller les modifications de la page afin de détecter certains éléments ajoutés après le chargement initial.
 
+
+
+👉 [Guide d'installation](INSTALLATION.md)
