@@ -1,5 +1,3 @@
-
-Popup · HTML
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,8 +7,9 @@ Popup · HTML
   <link rel="stylesheet" href="popup.css" />
 </head>
 <body>
+  <div class="panel">
   <div class="container">
- 
+
     <div class="header">
       <div class="badge">
         <div class="badge-glow"></div>
@@ -29,23 +28,23 @@ Popup · HTML
           <line x1="30" y1="70" x2="72" y2="28" stroke="white" stroke-width="4.2" stroke-linecap="round" />
         </svg>
       </div>
- 
+
       <p class="eyebrow">Bloqueur de publicités</p>
       <h1>NoPub</h1>
- 
+
       <div class="status-pill">
         <span class="status-dot"></span>
         <p id="status">Protection active</p>
       </div>
     </div>
- 
+
     <div class="counter">
       <div class="counter-inner">
         <span>Publicités bloquées</span>
         <strong id="counter">0</strong>
       </div>
     </div>
- 
+
     <div class="toggle-row">
       <div class="toggle-label">
         <span class="toggle-title">Protection</span>
@@ -55,9 +54,10 @@ Popup · HTML
         <span class="switch-thumb"></span>
       </button>
     </div>
- 
+
   </div>
- 
+  </div>
+
   <script src="popup.js"></script>
 </body>
 </html>
