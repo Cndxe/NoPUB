@@ -1,5 +1,6 @@
 # Fichiers generes par Chrome lors du chargement de l'extension
 _metadata/
+_metadata/generated_indexed_rulesets/_ruleset1
 
 # Archives de distribution locales
 *.crx
