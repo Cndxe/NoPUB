@@ -1,102 +1,45 @@
-# Comment installer **NoPUB** sur Google Chrome
+# Installer NoPUB dans Google Chrome
 
 ## Prérequis
 
-Disposer de :
+- Google Chrome installé sur l'ordinateur ;
+- le dossier source de NoPUB, contenant le fichier `manifest.json`.
 
-* Google Chrome installé sur l'ordinateur
-* Les fichiers sources de l'extension NoPUB
-* Le fichier `manifest.json` présent dans le dossier de l'extension
-
-> ⚠️ NoPUB est installée ici en tant qu'extension non empaquetée (« unpacked extension »). Cette méthode est principalement destinée au développement et aux tests.
+NoPUB est chargée comme extension non empaquetée. Cette méthode est destinée au développement et aux tests.
 
 ## Installation
 
-### 1. Télécharger ou récupérer le projet
-
-Récupérez les fichiers sources de NoPUB sur votre ordinateur.
-
-Le dossier doit contenir le fichier `manifest.json`.
-
-
-### 2. Ouvrir la page des extensions Chrome
-
-Dans Google Chrome, ouvrez :
-
-```text
-chrome://extensions/
-```
-
-Vous pouvez également accéder à cette page depuis :
-
-**⋮ → Extensions → Gérer les extensions**
-
-### 3. Activer le mode développeur
-
-En haut à droite de la page des extensions, activez :
-
-**Mode développeur**
-
-Cette option permet notamment de charger une extension directement depuis son dossier source.
-
-### 4. Charger NoPUB
-
-Cliquez sur :
-
-**Charger l'extension non empaquetée**
-
-Sélectionnez ensuite le **dossier racine de NoPUB**
-
-### 5. Vérifier l'installation
-
-Une fois NoPUB installée, elle doit apparaître dans la liste des extensions Chrome.
-
-Vérifiez que l'extension est activée.
+1. Dans Chrome, ouvrez `chrome://extensions/`.
+2. Activez le **Mode développeur**, en haut à droite.
+3. Cliquez sur **Charger l'extension non empaquetée**.
+4. Sélectionnez le dossier racine de NoPUB, celui qui contient `manifest.json`.
+5. Épinglez NoPUB depuis le menu Extensions de Chrome pour voir son icône et sa pastille d'état dans la barre d'outils.
 
 ## Utilisation
 
-NoPUB fonctionne automatiquement une fois activée.
+Cliquez sur l'icône NoPUB pour ouvrir l'interface principale.
 
-Selon la configuration de l'extension :
-
-* la protection est activée au démarrage ;
-* certaines requêtes publicitaires sont bloquées ;
-* certains éléments publicitaires présents dans les pages peuvent être supprimés ;
-* le compteur des éléments supprimés peut être mis à jour ;
-* la protection peut être activée ou désactivée.
-
-Après l'installation, ouvrez simplement un site correspondant aux permissions de l'extension.
+- L'interrupteur **Protection** active ou désactive le blocage.
+- Le voyant et la pastille de l'icône sont verts lorsque la protection est active, gris lorsqu'elle est inactive.
+- L'engrenage ouvre les paramètres, dont l'activation de la petite popup « NoPUB activée ».
 
 ## Après une modification du code
 
-Lorsque vous modifiez le code source de NoPUB, il peut être nécessaire de recharger l'extension.
+1. Ouvrez `chrome://extensions/`.
+2. Repérez **NoPUB**.
+3. Cliquez sur le bouton de rechargement de l'extension.
+4. Rechargez les pages web déjà ouvertes pour que le script de nettoyage soit à nouveau injecté.
 
-Pour cela :
+## Limites
 
-1. Ouvrez `chrome://extensions/`
-2. Repérez **NoPUB**
-3. Cliquez sur le bouton **Actualiser** 🔄
-
-Si une page web était déjà ouverte avant le rechargement de l'extension, rechargez également cette page.
-
-
-
-### Il se peut que certaines publicités ne sont pas bloquées !
-
-Le fonctionnement de NoPUB dépend des règles de blocage et des éléments ciblés par l'extension.
-
+NoPUB dépend de ses règles de blocage et des éléments HTML ciblés. Certaines publicités peuvent donc ne pas être détectées ou bloquées.
 
 ## Désinstallation
 
-Pour supprimer NoPUB :
-
-1. Ouvrez `chrome://extensions/`
-2. Repérez **NoPUB**
-3. Cliquez sur **Supprimer**
-4. Confirmez la suppression
-
-La suppression désactive et retire l'extension de Chrome.
+1. Ouvrez `chrome://extensions/`.
+2. Repérez **NoPUB**.
+3. Cliquez sur **Supprimer**, puis confirmez.
 
 ## Licence
 
-Consultez le fichier `LICENSE` du projet pour connaître les conditions d'utilisation et de distribution de NoPUB.
+[Consulter la licence de NoPUB](LICENCE.md)

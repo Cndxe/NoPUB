@@ -1,0 +1,12 @@
+# Fichiers generes par Chrome lors du chargement de l'extension
+_metadata/
+
+# Archives de distribution locales
+*.crx
+*.zip
+
+# Fichiers propres au systeme et aux editeurs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

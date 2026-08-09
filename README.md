@@ -1,43 +1,32 @@
 # NoPUB
 
-NoPUB est une extension Chrome légère qui a pour objectif de bloquer les publicités lors de la navigation sur Internet.
-
-L'extension fonctionne en arrière-plan et ne montre aucune interface pendant la navigation.
+NoPUB est une extension Chrome légère qui bloque une partie des publicités pendant la navigation.
 
 ## Fonctionnalités
 
-- 🛡️ Protection activée automatiquement
-
-- 🚫 Blocage de certaines requêtes publicitaires
-
-- 🧹 Suppression de certains éléments publicitaires présents dans les pages
-
-- 🔢 Compteur des publicités/éléments supprimés
-
-- 🔘 Activation ou désactivation de la protection
-
-- 🔔 Notification `NoPUB activé` au démarrage
-
-- ⚡ Fonctionnement en arrière-plan
-
-- 🌐 Fonctionne sur les sites correspondant aux permissions de l'extension
-
-
+- Protection activée par défaut, avec un interrupteur pour l'activer ou la désactiver.
+- Blocage de certaines requêtes publicitaires grâce à l'API Chrome `declarativeNetRequest`.
+- Suppression de certains éléments publicitaires présents dans les pages.
+- Compteur des éléments supprimés.
+- Interface principale accessible depuis l'icône NoPUB de la barre d'outils.
+- Voyant vert lorsque la protection est active et gris lorsqu'elle est inactive.
+- Pastille verte ou grise directement sur l'icône NoPUB épinglée.
+- Petite popup intégrée à Chrome « NoPUB activée », qui se ferme automatiquement.
+- Réglage de cette popup depuis l'engrenage des paramètres.
 
 ## Fonctionnement
 
-NoPUB utilise deux mécanismes principaux :
+NoPUB utilise deux mécanismes complémentaires :
 
-### 1. Blocage des requêtes
+1. **Blocage des requêtes** : des règles Chrome bloquent certaines requêtes provenant de domaines publicitaires connus.
+2. **Nettoyage des pages** : un script retire certains éléments identifiés comme publicitaires grâce à leurs identifiants ou classes HTML. Un `MutationObserver` surveille les éléments ajoutés après le chargement.
 
-L'extension utilise l'API `declarativeNetRequest` de Chrome afin de bloquer certaines requêtes provenant de domaines publicitaires connus.
+L'état de la protection est partagé avec les pages déjà ouvertes : un changement depuis l'interface est appliqué immédiatement.
 
-### 2. Nettoyage des pages
+## Installation
 
-Un script analyse les pages et supprime certains éléments identifiés comme publicitaires grâce à leurs identifiants ou classes HTML.
+[Consulter le guide d'installation](INSTALLATION.md)
 
-Un `MutationObserver` permet également de surveiller les modifications de la page afin de détecter certains éléments ajoutés après le chargement initial.
+## Licence
 
-
-
-👉 [Guide d'installation](INSTALLATION.md)
+[Consulter la licence](LICENCE.md)

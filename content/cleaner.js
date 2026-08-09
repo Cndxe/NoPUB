@@ -36,6 +36,18 @@
 
     });
 
+    chrome.storage.onChanged.addListener((changes, area) => {
+        if (area !== "local" || !changes.enabled) {
+            return;
+        }
+
+        enabled = changes.enabled.newValue !== false;
+
+        if (enabled) {
+            cleanPage();
+        }
+    });
+
 
     function cleanPage() {
 

@@ -10,23 +10,15 @@
   <div class="panel">
   <div class="container">
 
+    <main id="mainPage">
+    <button id="settingsButton" class="settings-button" aria-label="Ouvrir les parametres" title="Parametres">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.14 12.94a7.43 7.43 0 0 0 .05-.94 7.43 7.43 0 0 0-.05-.94l2.03-1.58-1.92-3.32-2.39.96a7.15 7.15 0 0 0-1.63-.94L14.87 3h-3.84l-.36 2.18c-.58.23-1.13.54-1.63.94l-2.39-.96-1.92 3.32 2.03 1.58a7.43 7.43 0 0 0-.05.94c0 .32.02.63.05.94l-2.03 1.58 1.92 3.32 2.39-.96c.5.4 1.05.72 1.63.94l.36 2.18h3.84l.36-2.18c.58-.23 1.13-.54 1.63-.94l2.39.96 1.92-3.32-2.03-1.58ZM12 15.5A3.5 3.5 0 1 1 12 8a3.5 3.5 0 0 1 0 7.5Z"/></svg>
+    </button>
+
     <div class="header">
       <div class="badge">
         <div class="badge-glow"></div>
-        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="shieldGrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#ec1a8d" />
-              <stop offset="52%" stop-color="#7b2ff7" />
-              <stop offset="100%" stop-color="#2f7de1" />
-            </linearGradient>
-          </defs>
-          <path d="M50 6 L88 20 C88 46 82 72 50 94 C18 72 12 46 12 20 Z"
-                fill="url(#shieldGrad)" />
-          <path d="M50 16 L79 26.5 C79 47 74.5 68 50 85.5 C25.5 68 21 47 21 26.5 Z"
-                fill="none" stroke="white" stroke-width="3.4" stroke-linejoin="round" />
-          <line x1="30" y1="70" x2="72" y2="28" stroke="white" stroke-width="4.2" stroke-linecap="round" />
-        </svg>
+        <img src="../icons/icon128.png" alt="Logo NoPUB" />
       </div>
 
       <p class="eyebrow">Bloqueur de publicités</p>
@@ -54,6 +46,28 @@
         <span class="switch-thumb"></span>
       </button>
     </div>
+
+    <footer class="popup-footer">
+      <span id="version">Version</span>
+      <span>© 2026 Cnxde</span>
+    </footer>
+
+    </main>
+
+    <section id="settingsPage" class="settings-page" aria-label="Parametres" aria-hidden="true">
+      <div class="settings-header">
+        <button id="backButton" class="back-button" aria-label="Retour a l'accueil">&#8592;</button>
+        <h2>Parametres</h2>
+      </div>
+      <p class="settings-intro">Personnalisez le comportement de NoPUB.</p>
+      <div class="settings">
+      <div>
+        <span class="toggle-title">Popup d'activation</span>
+        <span class="toggle-sub">Afficher le message bref quand NoPUB est active.</span>
+      </div>
+      <button id="notificationToggle" class="switch on" aria-pressed="true" aria-label="Activer ou desactiver la popup d'activation"><span class="switch-thumb"></span></button>
+      </div>
+    </section>
 
   </div>
   </div>
