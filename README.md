@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="img/icon.png" alt="NoPUB Logo" width="140">
+<img src="img/icon.png" alt="NoPUB Logo" width="100">
 
 # NoPUB
 
@@ -24,7 +24,7 @@ L'extension combine le **blocage de certaines requêtes publicitaires** avec le 
 
 <div align="center">
 
-<img src="img/imgextension.png" alt="Interface principale de NoPUB" width="400">
+<img src="img/imgextension.png" alt="Interface principale de NoPUB" width="300">
 
 </div>
 
@@ -32,7 +32,7 @@ L'extension combine le **blocage de certaines requêtes publicitaires** avec le 
 
 <div align="center">
 
-<img src="img/imgactiv.png" alt="Interface principale de NoPUB" width="400">
+<img src="img/imgactiv.png" alt="Interface principale de NoPUB" width="300">
 
 </div>
 
