@@ -1,5 +1,25 @@
 # NoPUB
 
+[![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue.svg)](https://developer.chrome.com/docs/extensions/mv3/intro/)
+[![Licence](https://img.shields.io/badge/Licence-Tous%20droits%20r%C3%A9serv%C3%A9s-blue.svg)](LICENCE.md)
+[![Privacy Friendly](https://img.shields.io/badge/Privacy-100%25-brightgreen.svg)](PRIVACY.md)
+
+> NoPUB est une extension Chrome légère et rapide pour bloquer les publicités et nettoyer l'affichage des pages web en temps réel.
+
+
+
+---
+
+
+<p align="center">
+  <img src="img/icon.png" alt="Logo NoPUB" width="150">
+</p>
+
+<p align="center">
+  <img src="img/imgextension.png" alt="Interface de NoPUB avec la protection active" width="320">
+</p>
+
+---
 NoPUB est une extension Chrome légère qui bloque une partie des publicités pendant la navigation.
 
 ## Fonctionnalités
