@@ -20,7 +20,6 @@
 </p>
 
 ---
-NoPUB est une extension Chrome légère qui bloque une partie des publicités pendant la navigation.
 
 ## Fonctionnalités
 
