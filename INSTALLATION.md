@@ -3,9 +3,8 @@
 ## Prérequis
 
 - Google Chrome installé sur l'ordinateur ;
-- le dossier source de NoPUB, contenant le fichier `manifest.json`.
+- le dossier source de NoPUB, contenant le fichier `manifest.json`
 
-NoPUB est chargée comme extension non empaquetée. Cette méthode est destinée au développement et aux tests.
 
 ## Installation
 
