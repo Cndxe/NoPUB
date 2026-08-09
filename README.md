@@ -106,41 +106,10 @@ NoPUB
 
 L'installation de NoPUB peut être effectuée manuellement depuis le code source.
 
-Consulte le guide détaillé :
-
-**[Guide d'installation](INSTALLATION.md)**
+Consulte le guide détaillé : **[Guide d'installation](INSTALLATION.md)**
 
 ---
 
-## Utilisation
-
-Après l'installation :
-
-1. Ouvrez Chrome.
-2. Accédez aux extensions.
-3. Activez NoPUB.
-4. Épinglez l'extension dans la barre d'outils si nécessaire.
-5. Cliquez sur l'icône NoPUB pour accéder à l'interface.
-6. Activez ou désactivez la protection selon vos besoins.
-
-L'état actuel de la protection est indiqué directement dans l'interface.
-
----
-
-## Confidentialité
-
-NoPUB a été conçu pour fonctionner directement dans le navigateur.
-
-Pour plus d'informations sur les données utilisées et les pratiques de confidentialité :
-
-**[Consulter la politique de confidentialité](PRIVACY.md)**
-
----
-
-## Licence
-
-**[LICENCE](LICENCE.md)**
-
----
+**[Consulter la politique de confidentialité](PRIVACY.md)** - **[LICENCE](LICENCE.md)**
 
 
