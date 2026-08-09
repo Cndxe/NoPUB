@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="assets/logo.png" alt="NoPUB Logo" width="140">
+<img src="img/icon.png" alt="NoPUB Logo" width="140">
 
 # NoPUB
 
-**Une extension Chrome légère pour bloquer les publicités et nettoyer les pages web en temps réel.**
+**Une extension Chrome légère pour bloquer les publicités et nettoyer les pages web.**
 
 [Installation](INSTALLATION.md) · [Confidentialité](PRIVACY.md) · [Licence](LICENCE.md)
 
@@ -18,58 +18,40 @@
 
 L'extension combine le **blocage de certaines requêtes publicitaires** avec le **nettoyage dynamique des éléments publicitaires présents dans les pages**.
 
-L'objectif est de proposer une solution simple, rapide et discrète, sans interface complexe.
-
 ---
 
 ## Aperçu
 
 <div align="center">
 
-<img src="assets/screenshot-main.png" alt="Interface principale de NoPUB" width="700">
+<img src="img/imgextension.png" alt="Interface principale de NoPUB" width="700">
 
 </div>
 
 > Interface principale de NoPUB avec l'état de la protection et le compteur des éléments supprimés.
 
-### Protection active
-
 <div align="center">
 
-<img src="assets/screenshot-active.png" alt="NoPUB protection active" width="450">
+<img src="img/imgactiv.png" alt="Interface principale de NoPUB" width="700">
 
 </div>
 
-### Protection désactivée
+> Petite popup affichée au lancement de Chrome pour indiquer l'état de l'extension.
 
-<div align="center">
 
-<img src="assets/screenshot-disabled.png" alt="NoPUB protection désactivée" width="450">
-
-</div>
-
-### Paramètres
-
-<div align="center">
-
-<img src="assets/screenshot-settings.png" alt="Paramètres de NoPUB" width="450">
-
-</div>
 
 ---
 
 ## Fonctionnalités
 
 * Protection activée par défaut.
-* Interrupteur permettant d'activer ou de désactiver la protection.
+* Interrupteur permettant d'activer ou de désactiver le blocage des publicitées.
 * Blocage de certaines requêtes provenant de domaines publicitaires connus.
 * Suppression de certains éléments publicitaires directement présents dans les pages.
 * Compteur des éléments supprimés.
 * Interface accessible depuis l'icône NoPUB dans la barre d'outils Chrome.
 * Indicateur visuel de l'état de la protection.
-* Synchronisation de l'état de protection avec les pages déjà ouvertes.
 * Application immédiate des changements effectués depuis l'interface.
-* Petite popup affichée au lancement de Chrome pour indiquer l'état de l'extension.
 * Paramétrage de la popup depuis la section dédiée aux paramètres.
 
 ---
@@ -82,19 +64,9 @@ NoPUB repose sur deux mécanismes complémentaires.
 
 L'extension utilise les mécanismes de filtrage de Chrome afin de bloquer certaines requêtes associées à des domaines publicitaires connus.
 
-Cette première couche permet d'empêcher certaines ressources publicitaires d'être chargées.
-
 ### 2. Nettoyage des pages
 
 Un script analyse ensuite le contenu des pages et supprime certains éléments identifiés comme publicitaires à partir de leurs **classes** ou **identifiants HTML**.
-
-Cette approche permet de nettoyer certains éléments qui auraient malgré tout été chargés dans la page.
-
-### 3. Synchronisation
-
-L'état de la protection est partagé avec les pages ouvertes.
-
-Lorsqu'un utilisateur active ou désactive NoPUB depuis son interface, le changement est appliqué immédiatement sans nécessiter de redémarrer le navigateur.
 
 ---
 
@@ -103,19 +75,29 @@ Lorsqu'un utilisateur active ou désactive NoPUB depuis son interface, le change
 ```text
 NoPUB
 │
-├── Blocage des requêtes
-│   └── Règles de filtrage Chrome
+├── README.md
+├── background.js
+├── INSTALLATION.md
+├── LICENCE.md
+├── manifest.json
+├── PRIVACY.md
 │
-├── Nettoyage des pages
-│   └── Détection et suppression des éléments publicitaires
+├── activation
+│   ├── activation.css
+│   ├── activation.html
+│   └── activation.js
 │
-├── Interface
-│   ├── État de la protection
-│   ├── Interrupteur
-│   └── Compteur
+├── content
+│   └── cleaner.js
 │
-└── Paramètres
-    └── Gestion de la popup au lancement de Chrome
+├── popup
+│   ├── popup.css
+│   ├── popup.html
+│   └── popup.js
+│
+├── rules
+   └── ads.json
+
 ```
 
 ---
@@ -157,37 +139,8 @@ Pour plus d'informations sur les données utilisées et les pratiques de confide
 
 ## Licence
 
-Ce projet est distribué sous la licence définie dans le fichier :
-
 **[LICENCE](LICENCE.md)**
 
 ---
 
-## Structure des ressources
 
-Pour organiser les éléments visuels du README, je recommande cette structure :
-
-```text
-.
-├── README.md
-├── INSTALLATION.md
-├── LICENCE.md
-├── PRIVACY.md
-│
-└── assets/
-    ├── logo.png
-    ├── screenshot-main.png
-    ├── screenshot-active.png
-    ├── screenshot-disabled.png
-    └── screenshot-settings.png
-```
-
----
-
-<div align="center">
-
-**NoPUB**
-
-Extension Chrome légère pour une navigation plus propre.
-
-</div>
