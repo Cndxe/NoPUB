@@ -11,8 +11,7 @@
   },
   "permissions": [
     "declarativeNetRequest",
-    "storage",
-    "windows"
+    "storage"
   ],
   "host_permissions": [
     "<all_urls>"
