@@ -29,3 +29,7 @@ L'état de la protection est partagé avec les pages déjà ouvertes : un change
 ## Licence
 
 [Consulter la licence](LICENCE.md)
+
+## Confidentialité
+
+[Consulter la politique de confidentialité](PRIVACY.md)
